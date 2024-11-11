@@ -1,0 +1,14 @@
+﻿@page "/Login"
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Components.Authorization
+using Microsoft.AspNetCore.Authentication;
+@inject IHttpContextAccessor HttpContextAccessor
+
+<h3>Login</h3>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await HttpContextAccessor.HttpContext.ChallengeAsync("oidc");
+    }
+ }

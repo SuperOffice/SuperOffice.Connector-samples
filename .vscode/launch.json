@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (Blazor Server)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildBlazor",
+            "program": "${workspaceFolder}/SuperOffice.Connector.Blazor/bin/Debug/net8.0/SuperOffice.Connector.Blazor.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Launch (CoreWCF)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildWCF",
+            "program": "${workspaceFolder}/SuperOffice.Connector.WCFServer/bin/Debug/net8.0/SuperOffice.Connector.WCFServer.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/SuperOffice.Connector.WCFServer/Views"
+            }
+        }
+    ]
+}

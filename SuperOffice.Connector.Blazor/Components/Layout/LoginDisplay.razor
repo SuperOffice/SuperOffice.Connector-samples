@@ -1,0 +1,18 @@
+﻿@using Microsoft.AspNetCore.Components.Authorization
+<CascadingAuthenticationState>
+    <AuthorizeView>
+        <Authorized>
+            <a href="logout">Hello, @context.User.FindFirst("http://schemes.superoffice.net/identity/email")?.Value!</a>
+            <form method="get" action="logout">
+                <button type="submit" class="nav-link btn btn-link">Log 
+                       out</button>
+            </form>
+        </Authorized>
+        <NotAuthorized>
+            <a href="Login">Log in</a>
+        </NotAuthorized>
+     </AuthorizeView>
+ </CascadingAuthenticationState>
+@code {
+
+}
