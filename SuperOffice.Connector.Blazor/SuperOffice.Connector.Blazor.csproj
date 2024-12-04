@@ -11,8 +11,7 @@
     <PackageReference Include="CoreWCF.Primitives" Version="1.6.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.10" />
     <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="8.2.0" />
-    <PackageReference Include="SuperOffice.Crm.Online.IntegrationServices" Version="10.3.11.910" />
-    <PackageReference Include="SuperOffice.SuperID.Contracts" Version="6.15.8356.1056" />
+    <PackageReference Include="SuperOffice.Crm.Online.IntegrationServices" Version="10.3.12.929" />
 	  <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
 	  <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="8.0.0" />
 	  <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.1" />
